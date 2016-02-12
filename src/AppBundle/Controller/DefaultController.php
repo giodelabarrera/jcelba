@@ -18,4 +18,14 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
         ));
     }
+
+    /**
+     * @Route("gallery", name="gallery")
+     */
+    public function galleryAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/gallery.html.twig', array(
+        ));
+    }
 }
