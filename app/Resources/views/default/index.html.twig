@@ -1,0 +1,584 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <!-- Section: home -->
+    <section id="home" class="divider parallax fullscreen">
+        <div class="maximage-slider">
+            <div id="maximage">
+                <img src="{{ asset('images/jcelba/_MG_5655.jpg') }}" alt="" />
+                <img src="{{ asset('images/jcelba/_MG_5712.jpg') }}" alt="" />
+                <img src="{{ asset('images/jcelba/_MG_5775.jpg') }}" alt="" />
+                <img src="{{ asset('images/jcelba/_MG_5780.jpg') }}" alt=""/>
+                <img src="{{ asset('images/jcelba/_MG_5615.jpg') }}" alt="" />
+            </div>
+            <div class="fullscreen-controls"> <a class="img-prev"><i class="pe-7s-angle-left"></i></a> <a class="img-next"><i class="pe-7s-angle-right"></i></a> </div>
+        </div>
+        <div class="display-table">
+            <div class="display-table-cell">
+                <div class="container pt-0 pb-0">
+                    <div class="row">
+                        <div class="col-md-8 col-md-push-2 heart-banner pt-100">
+                            <img class="img-responsive" src="{{ asset('images/photos/heart-1.png') }}" alt="">
+                            <div class="banner-title">
+                                <h1 class="font-60 text-blue">JC & Elba</h1>
+                                <h4>23 de Junio 2016</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Couple -->
+    <section id="couple" class="divider bg-img-center-bottom" data-bg-img="{{ asset('images/bg/bg9.jpg') }}">
+        <div class="container pt-70">
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-2">
+                    <div class="couple-frame">
+                        <img class="img-fullwidth" src="{{ asset('images/photos/groom.jpg') }}" alt="">
+                        <div class="couple-details">
+                            <h2 class="name">Juan Carlos De la Barrera</h2>
+                            <h4 class="title"><span>Novio</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="couple-frame mt-xs-30">
+                        <img class="img-fullwidth" src="{{ asset('images/photos/bride.jpg') }}" alt="">
+                        <div class="couple-details">
+                            <h2 class="name">Elba Sanchez</h2>
+                            <h4 class="title"><span>Novia</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-60">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3 class="pattern-bottom mt-0">Nos casaremos en</h3>
+                    <div id="clock" class="countdown-timer" data-endingdate="2016/06/23"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Divider: Gratitude -->
+    <section id="gratitude" class="divider bg-img-center-bottom" {# data-bg-img="{{ asset('images/bg/bg12.jpg') }}" #} style="background: none!important">
+        <div class="container pb-40">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="title pattern-bottom">Agradecimientos</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus unde, iste consectetur cumque repellat sint.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Gallery -->
+    <section id="gallery" data-bg-color="#F5F5F7">
+        <div class="container pb-60">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="title pattern-bottom">Galeria</h2>
+                        {# <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p> #}
+                    </div>
+                </div>
+            </div>
+            <div class="section-content text-center">
+                <div class="section-content">
+                <!-- Gallery items -->
+                <div class="masonry-items" data-layoutarray="[15]" data-padding="30">
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/1.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/1.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m1.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/m1.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/5.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/5.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/3.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/3.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m3.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/m3.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m2.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/m2.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m4.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/m4.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/6.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/6.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m3.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/m3.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/1.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/1.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/2.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/2.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/3.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/3.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/4.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/4.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/5.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/5.jpg') }}">View more</a>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="thumb">
+                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/6.jpg') }}" alt="featured project"  width="476">
+                        </div>
+                        <div class="overlay text-center">
+                            <div class="display-table">
+                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/6.jpg') }}">View more</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Divider: Our Video -->
+    <section id="our-video" class="divider layer-overlay overlay-white-light" data-bg-img="{{ asset('images/jcelba/_MG_5652.jpg') }}">
+        <div class="container pt-200 pb-200">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="https://www.youtube.com/watch?v=y6PH9u0wnww" data-lightbox-gallery="youtube-video"><i class="fa fa-play-circle text-blue font-72"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Events -->
+    <section id="events">
+        <div class="container pb-30">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="title pattern-bottom">Events</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row multi-row-clearfix">
+                    <div class="events">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <article class="event clearfix maxwidth500 mb-30 bg-white">
+                                <div class="col-xs-12 p-0">
+                                    <div class="entry-header">
+                                        <div class="event-thumb">
+                                            <img src="{{ asset('images/event/event-img1.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                        </div>
+                                        <div class="entry-date text-center">
+                                            <span><b>DEC </b></span><br>25
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 p-0">
+                                    <div class="entry-content text-left p-30 pl-xs-15 pr-xs-15">
+                                        <h4 class="entry-title sm-inline-block mt-0 mt-sm-30 pt-0"><a href="index-mp-layout2.html#">The Celebration</a></h4>
+                                        <div class="entry-meta mt-10 mb-20">
+                                            <ul class="list-inline font-13">
+                                                <li><i class="fa fa-clock-o mr-5"></i> 3pm - 6pm </li>
+                                                <li><i class="fa fa-map-marker mr-5"></i> 121 King Street, Melbourne</li>
+                                            </ul>
+                                        </div>
+                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <article class="event clearfix maxwidth500 mb-30 bg-white">
+                                <div class="col-xs-12 p-0">
+                                    <div class="entry-header">
+                                        <div class="event-thumb">
+                                            <img src="{{ asset('images/event/event-img2.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                        </div>
+                                        <div class="entry-date text-center">
+                                            <span><b>DEC </b></span><br>26
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 p-0">
+                                    <div class="entry-content text-left p-30 pl-xs-15 pr-xs-15">
+                                        <h4 class="entry-title mt-0 pt-0"><a href="index-mp-layout2.html#">Wedding Ceremony</a></h4>
+                                        <div class="entry-meta mt-10 mb-20">
+                                            <ul class="list-inline font-13">
+                                                <li><i class="fa fa-clock-o mr-5"></i> 6pm - 9pm </li>
+                                                <li><i class="fa fa-map-marker mr-5"></i> 121 King Street, Melbourne</li>
+                                            </ul>
+                                        </div>
+                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Divider: Best People -->
+    {# <section id="people" class="divider bg-img-center-bottom" data-bg-img="{{ asset('images/bg/bg13.jpg') }}">
+        <div class="container pb-30">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="title pattern-bottom">Best People</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-30">
+                    <div class="bride-groomsmen-carousel">
+                        <div class="item">
+                            <div class="best-people">
+                                <div class="thumb">
+                                    <img src="{{ asset('images/photos/p1.jpg') }}" alt="">
+                                    <div class="info">
+                                        <h4 class="title">Brideman</h4>
+                                    </div>
+                                </div>
+                                <h5 class="name">Jenny williams <span class="font-13 text-black-light"> - Sister</span></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="best-people">
+                                <div class="thumb">
+                                    <img src="{{ asset('images/photos/p2.jpg') }}" alt="">
+                                    <div class="info">
+                                        <h4 class="title">Groomsmen</h4>
+                                    </div>
+                                </div>
+                                <h5 class="name">Jakaria Smith <span class="font-13 text-black-light"> - Friend</span></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="best-people">
+                                <div class="thumb">
+                                    <img src="{{ asset('images/photos/p3.jpg') }}" alt="">
+                                    <div class="info">
+                                        <h4 class="title">Brideman</h4>
+                                    </div>
+                                </div>
+                                <h5 class="name">Ismail Doe<span class="font-13 text-black-light"> - Brother</span></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="best-people">
+                                <div class="thumb">
+                                    <img src="{{ asset('images/photos/p4.jpg') }}" alt="">
+                                    <div class="info">
+                                        <h4 class="title">Groomsmen</h4>
+                                    </div>
+                                </div>
+                                <h5 class="name">Sokhina Alba <span class="font-13 text-black-light"> - Friend</span></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="best-people">
+                                <div class="thumb">
+                                    <img src="{{ asset('images/photos/p5.jpg') }}" alt="">
+                                    <div class="info">
+                                        <h4 class="title">Groomsmen</h4>
+                                    </div>
+                                </div>
+                                <h5 class="name">Mark Hasan <span class="font-13 text-black-light"> - Friend</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> #}
+    <!-- Section: RSVP -->
+    <section id="rsvp" class="divider layer-overlay overlay-white" data-bg-img="{{ asset('images/bg/bg7.jpg') }}">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="rsvp-form" class="rsvp-form mb-0 mb-sm-60 p-40 pl-30 pr-30" data-bg-color="rgba(0, 121, 191, 0.7)">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="text-center text-white mt-0">RSVP</h2>
+                                <div class="form-group">
+                                    <label><strong>Name</strong></label>
+                                    <input type="text" id="rsvp_name" name="rsvp_name" required="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label><strong>Email</strong></label>
+                                    <input type="text" id="rsvp_email" name="rsvp_email" class="form-control" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label><strong>Phone</strong></label>
+                                    <input type="text" id="rsvp_phone" name="rsvp_phone" class="form-control" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label><strong>Ceremony & Party</strong></label>
+                                    <select class="form-control">
+                                        <option>All Event</option>
+                                        <option>Wedding</option>
+                                        <option>Dinner Party</option>
+                                        <option>Programm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group mt-20">
+                                    <textarea class="form-control" required name="rsvp_message" id="rsvp_message" placeholder="Enter Message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <button data-loading-text="Please wait..." class="btn btn-colored btn-white" type="submit">Your Opinion
+                                    </button>
+                                    <button data-loading-text="Please wait..." class="btn btn-colored btn-white" type="submit">Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Blog -->
+    {# <section class="divider bg-img-center-bottom" data-bg-img="{{ asset('images/bg/bg13.jpg') }}">
+        <div class="container">
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="title pattern-bottom">Blog</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row multi-row-clearfix">
+                    <div class="blog-post">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <article class="post clearfix maxwidth500 mb-40 bg-white">
+                                <div class="col-sm-12 col-md-4 p-0">
+                                    <div class="entry-header">
+                                        <div class="post-thumb">
+                                            <img src="{{ asset('images/blog/blog-img1.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                        </div>
+                                        <div class="entry-date text-center font-Playball">
+                                            <span><i class="fa fa-thumbs-o-up font-24 font-24"></i></span><br>27
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 p-0">
+                                    <div class="entry-content pl-50 pr-50 p-30 pl-xs-15 pr-xs-15 text-left">
+                                        <h3 class="entry-title sm-inline-block mt-0 mt-sm-30 mt-xs-0 pt-0"><a href="index-mp-layout2.html#">Our Honeymoon planning</a></h3>
+                                        <div class="entry-meta mb-20">
+                                            <span>By Admin </span>
+                                            <span><i class="fa fa-comments-o text-blue ml-10"></i> 15
+                                            </span>
+                                        </div>
+                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit expedita, deleniti culpa nam fuga neque ab similique corporis. Sed eligendi perspiciatis error ipsam culpa, iusto dolor cum consectetur nihil qui ab obcaecati omnis odit veniam laboriosam esse quas, repellendus magnam fugit dignissimos Culpa, velit consectetur adipisicing elit.</p>
+                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <article class="post clearfix maxwidth500 mb-40 bg-white">
+                                <div class="col-xs-12 col-md-4 p-0 pull-right">
+                                    <div class="entry-header">
+                                        <div class="post-thumb">
+                                            <img src="{{ asset('images/blog/blog-img2.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                        </div>
+                                        <div class="entry-date text-center font-Playball">
+                                            <span><i class="fa fa-thumbs-o-up font-24 font-24"></i></span><br>25
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 p-0">
+                                    <div class="entry-content pl-50 pr-50 p-30 pl-xs-15 pr-xs-15 text-left">
+                                        <h3 class="entry-title sm-inline-block mt-0 mt-sm-30 pt-0"><a href="index-mp-layout2.html#">Our Photogrape</a></h3>
+                                        <div class="entry-meta mb-20">
+                                            <span>By Admin </span>
+                                            <span><i class="fa fa-comments-o text-blue ml-10"></i> 15
+                                            </span>
+                                        </div>
+                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit expedita, deleniti culpa nam fuga neque ab similique corporis. Sed eligendi perspiciatis error ipsam culpa, iusto dolor cum consectetur nihil qui ab obcaecati omnis odit veniam laboriosam esse quas, repellendus magnam fugit dignissimos Culpa, velit consectetur adipisicing elit.</p>
+                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <article class="post clearfix maxwidth500 bg-white">
+                                <div class="col-xs-12 col-md-4 p-0">
+                                    <div class="entry-header">
+                                        <div class="post-thumb">
+                                            <img src="{{ asset('images/blog/blog-img3.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                        </div>
+                                        <div class="entry-date text-center font-Playball">
+                                            <span><i class="fa fa-thumbs-o-up font-24 font-24"></i></span><br>28
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 p-0">
+                                    <div class="entry-content pl-50 pr-50 p-30 pl-xs-15 pr-xs-15 text-left">
+                                        <h3 class="entry-title sm-inline-block mt-0 mt-sm-30 pt-0"><a href="index-mp-layout2.html#">Our First Date</a></h3>
+                                        <div class="entry-meta mb-20">
+                                            <span>By Admin </span>
+                                            <span><i class="fa fa-comments-o text-blue ml-10"></i> 15
+                                            </span>
+                                        </div>
+                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit expedita, deleniti culpa nam fuga neque ab similique corporis. Sed eligendi perspiciatis error ipsam culpa, iusto dolor cum consectetur nihil qui ab obcaecati omnis odit veniam laboriosam esse quas, repellendus magnam fugit dignissimos Culpa, velit consectetur adipisicing elit.</p>
+                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> #}
+    <!-- Section: Map -->
+    <section id="map">
+        <div class="container-fluid p-0">
+            <div data-popupstring-id="#popupstring1" class="map-canvas autoload-map" data-height="600" data-address="Passatge d'Utset, 5, Barcelona" data-zoom="15" data-mapstyle="style1" data-marker="{{ asset('images/map-icon-blue.png') }}"></div>
+            <div class="map-popupstring hidden" id="popupstring1">
+                <div class="text-center">
+                    <h2>JC & Elba</h2>
+                    <h5>23 de Junio 2016</h5>
+                    <p>Passatge d'Utset, 5, Barcelona</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
