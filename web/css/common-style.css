@@ -515,7 +515,7 @@ ul.list li a {
 	background: none !important;
 }
 .social-icons.flat a:hover i {
-	color: #D65679;
+	color: #0079BF;
 }
 .social-icons.flat.medium a {
 	height: 40px;
@@ -919,7 +919,7 @@ section > .container, section > .container-fluid {
 
 /* navbar-dark */
 .header .navbar-dark {
-	background-color: rgba(214,86,121,0.95);
+	background-color: rgba(0, 121, 191,0.95);
 	border: none;
 }
 /* header white */

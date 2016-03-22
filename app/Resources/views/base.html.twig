@@ -34,7 +34,7 @@
             <!-- CSS | Responsive media queries -->
             <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
             <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
-            <!-- <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"> -->
+            {#<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">#}
         {% endblock %}
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,6 +71,17 @@
                                 <nav id="menuzord-right" class="menuzord">
                                     <a class="menuzord-brand" href="{{ path('homepage') }}"><img src="{{ asset('images/logo-wide.png') }}" alt=""></a>
                                     <ul class="menuzord-menu">
+                                        <li><a href="{{ path('homepage') }}#home">Inicio</a></li>
+                                        <li><a href="{{ path('homepage') }}#couple">Nosotros</a></li>
+                                        <li><a href="{{ path('homepage') }}#gratitude">Agradecimientos</a></li>
+                                        <li><a href="{{ path('homepage') }}#gallery">Galeria</a></li>
+                                        <li><a href="{{ path('homepage') }}#our-video">Video</a></li>
+                                        <li><a href="{{ path('homepage') }}#events">Eventos</a></li>
+                                        <li><a href="{{ path('homepage') }}#map">Mapa</a></li>
+                                        {#<li><a href="index-mp-layout2.html#people">People</a></li>#}
+                                        {#<li><a href="index-mp-layout2.html#rsvp">RSVP</a></li>#}
+                                    </ul>
+                                    {# <ul class="menuzord-menu">
                                         <li>
                                             <a href="index-mp-layout2.html#">Home</a>
                                             <ul class="dropdown">
@@ -120,7 +131,7 @@
                                                 <li><a href="blog-single-no-sidebar.html">Single Page No Sidebar</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> #}
                                 </nav>
                             </div>
                         </div>
@@ -140,14 +151,11 @@
                     <div class="container pt-40">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 text-center">
-                                <h2 class="title font-36 text-pink">Thank You</h2>
+                                <h2 class="title font-36 text-blue">Gracias</h2>
                                 <ul class="social-icons medium mb-30 mt-30">
-                                    <li><a href="index-mp-layout2.html#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="index-mp-layout2.html#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="index-mp-layout2.html#"><i class="fa fa-google-plus"></i></a></li>
                                     <li><a href="index-mp-layout2.html#"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
-                                <p class="font-11 m-0">Copyright &copy;2015 ThemeMascot. All Rights Reserved</p>
+                                {# <p class="font-11 m-0">Copyright &copy;2015 ThemeMascot. All Rights Reserved</p> #}
                             </div>
                         </div>
                     </div>

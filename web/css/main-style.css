@@ -83,8 +83,8 @@ a (active):  	#666 (light black)
 
 [Theme color]
 
-a (visited):	#D65679 (pink)
-a (active):  	#D65679 (pink)
+a (visited):	#0079BF (blue)
+a (active):  	#0079BF (blue)
 -------------------------------------------------------------------*/
 
 
@@ -196,13 +196,13 @@ a:active {
 	outline: none;
 }
 ul.list li:before {
-	color: #D65679;
+	color: #0079BF;
 }
 .list-default > li {
   margin-bottom: 15px;
 }
 .list-default li i {
-  color: #D65679;
+  color: #0079BF;
   margin-right: 10px;
 }
 /*
@@ -282,27 +282,27 @@ button.btn-colored.focus {
 .btn-default.btn-white:hover {
 	border: 1px solid #393939!important;
 }
-.btn-default.btn-pink {
-  border: 1px solid #D65679 !important;
-  color: #D65679 !important;
+.btn-default.btn-blue {
+  border: 1px solid #0079BF !important;
+  color: #0079BF !important;
 }
-/* button pink */
-.btn-colored.btn-pink {
-	border: 1px solid #D65679 !important;
-	background: #D65679!important;
+/* button blue */
+.btn-colored.btn-blue {
+	border: 1px solid #0079BF !important;
+	background: #0079BF!important;
 	color: #fff!important;
 }
-.btn-colored.btn-pink:hover {
-	background: #d64a75 !important;
+.btn-colored.btn-blue:hover {
+	background: #0070B0 !important;
 	color: #fff !important;
 }
-.btn-default.btn-pink {
-	border: 1px solid #d64a75 !important;
-	color: #D65679!important;
+.btn-default.btn-blue {
+	border: 1px solid #0070B0 !important;
+	color: #0079BF!important;
 }
-.btn-default.btn-pink:hover {
-	border-color: #d64a75!important;
-	color: #d64a75!important;
+.btn-default.btn-blue:hover {
+	border-color: #0070B0!important;
+	color: #0070B0!important;
 }
 /* button rounded */
 .btn.btn-rounded {
@@ -372,28 +372,28 @@ button.btn-colored.focus {
  * -----------------------------------------------
 */
 /* text color */
-.text-pink {
-	color: #D65679 !important;
+.text-blue {
+	color: #0079BF !important;
 }
 /* bg color */
-.bg-pink {
-	background-color: #D65679 !important;
+.bg-blue {
+	background-color: #0079BF !important;
 }
-a.bg-pink,
-button.bg-pink {
+a.bg-blue,
+button.bg-blue {
 	color: #fff;
 }
-.bg-pink-transparent {
-	background-color: rgba(214, 86, 121, 0.6) !important;
+.bg-blue-transparent {
+	background-color: rgba(0, 121, 191, 0.6) !important;
 }
-.layer-overlay.overlay-pink::before {
-	background-color: rgba(214, 86, 121, 0.65);
+.layer-overlay.overlay-blue::before {
+	background-color: rgba(0, 121, 191, 0.65);
 }
-.layer-overlay.overlay-pink-light::before {
-	background-color: rgba(214, 86, 121, 0.4);
+.layer-overlay.overlay-blue-light::before {
+	background-color: rgba(0, 121, 191, 0.4);
 }
-.layer-overlay.overlay-pink-deep::before {
-	background-color: rgba(214, 86, 121, 0.85);
+.layer-overlay.overlay-blue-deep::before {
+	background-color: rgba(0, 121, 191, 0.85);
 }
 /*
  * 2.0 -> Preloader
@@ -444,8 +444,8 @@ button.bg-pink {
 .cssload-heartL {
 	width: 1em;
 	height: 1em;
-	border: 1px solid rgb(214,86,120);
-	background-color: rgb(214,86,120);
+	border: 1px solid rgb(0, 121, 191);
+	background-color: rgb(0, 121, 191);
 	content: '';
 	position: absolute;
 	display: block;
@@ -464,8 +464,8 @@ button.bg-pink {
 .cssload-heartR {
 	width: 1em;
 	height: 1em;
-	border: 1px solid rgb(214,86,120);
-	background-color: rgb(214,86,120);
+	border: 1px solid rgb(0, 121, 191);
+	background-color: rgb(0, 121, 191);
 	content: '';
 	position: absolute;
 	display: block;
@@ -484,8 +484,8 @@ button.bg-pink {
 .cssload-square {
 	width: 1em;
 	height: 1em;
-	border: 1px solid rgb(214,86,120);
-	background-color: rgb(214,86,120);
+	border: 1px solid rgb(0, 121, 191);
+	background-color: rgb(0, 121, 191);
 	position: relative;
 	display: block;
 	content: '';
@@ -723,25 +723,25 @@ button.bg-pink {
 }
 /*Menuzord Nav color*/
 .menuzord-menu > li.active > a, .menuzord-menu > li:hover > a {
-  background: #bc4666 none repeat scroll 0 0;
+  background: #00649E none repeat scroll 0 0;
 }
 .menuzord .menuzord-menu ul.dropdown li:hover > a {
-  background: #D65679 none repeat scroll 0 0;
+  background: #0079BF none repeat scroll 0 0;
 }
-.menuzord.pink .menuzord-menu > li.active > a, 
-.menuzord.pink .menuzord-menu > li:hover > a {
-  border-top-color: #D65679;
+.menuzord.blue .menuzord-menu > li.active > a, 
+.menuzord.blue .menuzord-menu > li:hover > a {
+  border-top-color: #0079BF;
 }
-.menuzord.pink .menuzord-menu > li.active > a, 
-.menuzord.pink .menuzord-menu > li:hover > a, 
-.menuzord.pink .menuzord-menu ul.dropdown li:hover > a,
+.menuzord.blue .menuzord-menu > li.active > a, 
+.menuzord.blue .menuzord-menu > li:hover > a, 
+.menuzord.blue .menuzord-menu ul.dropdown li:hover > a,
 .menuzord-menu > li > .megamenu .megamenu-row li:hover > a,
 .menuzord-menu > li > .megamenu .megamenu-row .post a:hover {
-	background: #D65679;
+	background: #0079BF;
 	color: #ffffff;
 }
 .menuzord .menuzord-menu ul.dropdown, .menuzord .menuzord-menu .megamenu {
-	border-top: 3px solid #D65679;
+	border-top: 3px solid #0079BF;
 }
 .menuzord-brand img {
 	max-height: 38px;
@@ -759,9 +759,9 @@ button.bg-pink {
 	.menuzord-responsive .menuzord-menu > li > a {
 	  color: #111 !important;
 	}
-	.menuzord.pink .menuzord-menu > li.active > a, 
-	.menuzord.pink .menuzord-menu > li:hover > a, 
-	.menuzord.pink .menuzord-menu ul.dropdown li:hover > a,
+	.menuzord.blue .menuzord-menu > li.active > a, 
+	.menuzord.blue .menuzord-menu > li:hover > a, 
+	.menuzord.blue .menuzord-menu ul.dropdown li:hover > a,
 	.menuzord-menu > li > .megamenu .megamenu-row li:hover > a,
 	.menuzord-menu > li > .megamenu .megamenu-row .post a:hover {
 		color: #fff !important;
@@ -897,7 +897,7 @@ button.bg-pink {
 .panel-title a.active::after {
 	color: #fff;
 	content: "\f068";
-    background: #D65679;
+    background: #0079BF;
 }
 .panel-group .panel-title a.active .open-sub:after {
 	display: none;
@@ -951,13 +951,13 @@ button.bg-pink {
  * 3.26 -> Social Icons
  * -----------------------------------------------
 */
-.social-icons.icon-pink a {
-	background: #D65679;
+.social-icons.icon-blue a {
+	background: #0079BF;
 }
-.social-icons.icon-pink a:hover {
-	background: #D65679;
+.social-icons.icon-blue a:hover {
+	background: #0079BF;
 }
-.social-icons.icon-pink a i {
+.social-icons.icon-blue a i {
 	color: #fff;
 }
 /*
@@ -982,7 +982,7 @@ button.bg-pink {
 }
 .owl-theme .owl-dots .owl-dot span {
 	background: #fff;
-	border: 2px solid #D65679;
+	border: 2px solid #0079BF;
 	border-radius: 50%;
 	display: block;
 	height: 12px;
@@ -995,7 +995,7 @@ button.bg-pink {
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #D65679;
+	background: #0079BF;
 }
 /* owl nav */
 .owl-controls .owl-nav > div {
@@ -1092,14 +1092,14 @@ button.bg-pink {
 	background-color: rgba(255, 255, 255, 0.90);
 }
 .best-people:hover .info .relation {
-	color: #d65679;
+	color: #0079BF;
 }
 /*
  * 4.2  -> Revolution
  * -----------------------------------------------
 */
 .zeus .tp-bullet::after {
-	background-color: #D65679;
+	background-color: #0079BF;
 }
 /*
  * 4.3  -> MaxImage Slider
@@ -1138,7 +1138,7 @@ button.bg-pink {
   font-family: "Playball",cursive;
 }
 .couple-frame .couple-details .title span {
-  background-color: rgba(214, 86, 121, 0.95);
+  background-color: rgba(0, 121, 191, 0.95);
   border-radius: 15px;
   color: #fff;
   padding: 5px 35px;
@@ -1149,7 +1149,7 @@ button.bg-pink {
 */
 .countdown-timer li {
 	border-radius: 10px;
-	color: #D65679;
+	color: #0079BF;
 	display: inline-block;
     font-family: "Playball",cursive;
 	padding: 30px 20px;
@@ -1163,7 +1163,7 @@ button.bg-pink {
 .countdown-timer li span {
 	color: #666;
 	display: block;
-	font-size: 11px;
+	font-size: 24px;
 }
 /*
  * 3.19 -> Story Timeline
@@ -1186,7 +1186,7 @@ button.bg-pink {
 	margin-bottom: 0;
 }
 .story-timeline .each-story:nth-child(2n) .story-details {
-	background: #D65679;
+	background: #0079BF;
 }
 .story-timeline .each-story:nth-child(2n) .story-details .title,
 .story-timeline .each-story:nth-child(2n) .story-details p {
@@ -1290,7 +1290,7 @@ button.bg-pink {
 	transition: all 0.2s ease-in-out;
 }
  .masonry-items .masonry-item:hover .overlay i {
-	background: #D65679 none repeat scroll 0 0;
+	background: #0079BF none repeat scroll 0 0;
 	border-radius: 50%;
 	color: #fff;
 	font-size: 16px;
@@ -1320,7 +1320,7 @@ button.bg-pink {
  * -----------------------------------------------
 */
 .progress-item .progress-bar {
-	background: #D65679 none repeat scroll 0 0;
+	background: #0079BF none repeat scroll 0 0;
 	font-size: 11px;
 	line-height: 18px;
 	padding-left: 10px;
@@ -1335,7 +1335,7 @@ button.bg-pink {
 */
 .events .entry-date,
 .blog-post .post .entry-date {
-	background: #d65679 none repeat scroll 0 0;
+	background: #0079BF none repeat scroll 0 0;
 	color: #fff;
 	padding: 10px 15px;
 	position: absolute;
@@ -1355,7 +1355,7 @@ button.bg-pink {
 }
 .rsvp-form .form-control {
 	background-color: rgba(0, 0, 0, 0.2);
-	border: 1px solid #d65679;
+	border: 1px solid #0079BF;
 	color: #fff;
 }
 /*
@@ -1363,7 +1363,7 @@ button.bg-pink {
  * -----------------------------------------------
 */
 .blog-post .post .entry-meta a {
-	color: #d65679;
+	color: #0079BF;
 }
 /*
  * 5.0 -> Single Post
@@ -1440,7 +1440,7 @@ button.bg-pink {
 }
 
 .single-post .comment-list .comment-heading {
-    color: #D65679;
+    color: #0079BF;
     font-size: 14px;
     font-weight: 600;
 }
@@ -1483,7 +1483,7 @@ button.bg-pink {
     padding: 10px;
 }
 .sidebar .search-form .search-button {
-    background: #D65679 none repeat scroll 0 0;
+    background: #0079BF none repeat scroll 0 0;
     border: 1px solid #ccc;
     border-radius: 0;
     color: #fff;
@@ -1505,7 +1505,7 @@ button.bg-pink {
     padding: 5px 10px;
 }
 .sidebar-widget .text-widget.address li i {
-    color: #D65679;
+    color: #0079BF;
     font-size: 16px;
     margin-right: 8px;
     vertical-align: middle;
@@ -1546,7 +1546,7 @@ button.bg-pink {
     padding: 5px 10px;
 }
 .sidebar-widget .tags a:hover {
-    background: #D65679 none repeat scroll 0 0;
+    background: #0079BF none repeat scroll 0 0;
     color: #fff;
     transition: all 0.1s ease-in-out 0s;
 }
@@ -1559,10 +1559,10 @@ button.bg-pink {
 }
 .footer .social-icons a {
 	color: #fff;
-	background: rgba(214,86,121,0.7);
+	background: rgba(0, 121, 191, 0.7);
 }
 .footer .social-icons a:focus,
 .footer .social-icons a:hover,
 .footer .social-icons a:active {
-	background: rgba(214,86,121,0.95);
+	background: rgba(0, 121, 191, 0.95);
 }

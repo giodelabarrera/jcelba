@@ -35,6 +35,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources: ['bootstrap_3_layout.html.twig']
+        # resources: ['bootstrap_3_horizontal_layout.html.twig']
 
 # Doctrine Configuration
 doctrine:
@@ -67,8 +70,8 @@ swiftmailer:
     spool:     { type: memory }
 
 # assetic
-assetic:
-    use_controller: false
+# assetic:
+#     use_controller: false
 
 
 
