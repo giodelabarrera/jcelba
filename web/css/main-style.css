@@ -344,7 +344,7 @@ button.btn-colored.focus {
   position: relative;
 }
 .pattern-bottom::after {
-  background: url("../images/section-title-after.png") no-repeat;
+  background: url("../images/section-title-after-blue.png") no-repeat;
   bottom: 0;
   content: "";
   height: 19px;
@@ -352,7 +352,7 @@ button.btn-colored.focus {
   margin: 0 auto;
   position: absolute;
   right: 0;
-  width: 200px;
+  width: 292px;
 }
 /* custom font family */
 .font-raleway {
