@@ -17,6 +17,7 @@
         <link href="{{ asset('images/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon" sizes="114x114">
         <link href="{{ asset('images/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon" sizes="144x144">
         {% block stylesheets %}
+            
             <!-- Stylesheet -->
             <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
             <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
@@ -35,6 +36,7 @@
             <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
             <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
             {#<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">#}
+
         {% endblock %}
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,15 +71,16 @@
                         <div class="header-nav-wrapper">
                             <div class="container pt-20 pb-20">
                                 <nav id="menuzord-right" class="menuzord">
-                                    <a class="menuzord-brand" href="{{ path('homepage') }}"><img src="{{ asset('images/logo-wide.png') }}" alt=""></a>
+                                    {#<a class="menuzord-brand" href="{{ path('homepage') }}"><img src="{{ asset('images/logo-wide.png') }}" alt=""></a>#}
+                                    <a class="menuzord-brand gb-logo" href="{{ path('homepage') }}">JC & Elba</a>
                                     <ul class="menuzord-menu">
                                         <li><a href="{{ path('homepage') }}#home">Inicio</a></li>
                                         <li><a href="{{ path('homepage') }}#couple">Nosotros</a></li>
                                         <li><a href="{{ path('homepage') }}#gratitude">Agradecimientos</a></li>
                                         <li><a href="{{ path('homepage') }}#gallery">Galeria</a></li>
-                                        <li><a href="{{ path('homepage') }}#our-video">Video</a></li>
+                                        {#<li><a href="{{ path('homepage') }}#our-video">Video</a></li>#}
                                         <li><a href="{{ path('homepage') }}#events">Eventos</a></li>
-                                        <li><a href="{{ path('homepage') }}#map">Mapa</a></li>
+                                        {# <li><a href="{{ path('homepage') }}#map">Mapa</a></li> #}
                                         {#<li><a href="index-mp-layout2.html#people">People</a></li>#}
                                         {#<li><a href="index-mp-layout2.html#rsvp">RSVP</a></li>#}
                                     </ul>
@@ -153,8 +156,10 @@
                             <div class="col-md-6 col-md-offset-3 text-center">
                                 <h2 class="title font-36 text-blue">Gracias</h2>
                                 <ul class="social-icons medium mb-30 mt-30">
-                                    <li><a href="index-mp-layout2.html#"><i class="fa fa-instagram"></i></a></li>
+                                    {#<li><a href="index-mp-layout2.html#"><i class="fa fa-instagram"></i></a></li>#}
+                                    <li style="font-style: italic;">Ponme como sello sobre tu corazón, como sello sobre tu brazo; porque el amor es tan fuerte como la muerte, la insistencia en la devoción exclusiva es tan inexorable como el Seol. Sus llamaradas son las llamaradas de un fuego, la llama de Jah</li>
                                 </ul>
+                                El Cantar de los Cantares 8:6
                                 {# <p class="font-11 m-0">Copyright &copy;2015 ThemeMascot. All Rights Reserved</p> #}
                             </div>
                         </div>
@@ -166,6 +171,7 @@
         </div>
         <!-- end wrapper -->
         {% block javascripts %}
+            {#}
             <!-- jQuery scripts -->
             <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
             <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -179,6 +185,22 @@
             <script src="{{ asset('js/jquery-plugin-collection.js') }}"></script>
             <!-- JS | Custom script for all pages -->
             <script src="{{ asset('js/custom.js') }}"></script>
+            #}
+            <!-- JS | google map -->
+            <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+            {# js with assetic #}
+            {% javascripts
+                'js/jquery-2.1.4.min.js'
+                'js/bootstrap.min.js'
+                'js/revolution-slider/js/jquery.themepunch.tools.min.js'
+                'js/revolution-slider/js/jquery.themepunch.revolution.min.js'
+                'js/custom-rev-slider.js'
+                'js/jquery-plugin-collection.js'
+                'js/custom.js'
+                %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock %}
     </body>
 </html>

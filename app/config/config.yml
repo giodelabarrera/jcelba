@@ -70,8 +70,11 @@ swiftmailer:
     spool:     { type: memory }
 
 # assetic
-# assetic:
-#     use_controller: false
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
 
 
 

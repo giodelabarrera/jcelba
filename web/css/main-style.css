@@ -755,6 +755,17 @@ button.bg-blue {
 .menuzord .showhide em {
 	background: #fff none repeat scroll 0 0;
 }
+.gb-logo {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.2;
+	font-family: 'Playball', cursive;
+	color: #fff;
+	/*margin: 8px 30px 10px 20px;*/
+}
+.gb-logo:hover {
+	color: #fff;
+}
 @media only screen and (max-width : 767px) {
 	.menuzord-responsive .menuzord-menu > li > a {
 	  color: #111 !important;

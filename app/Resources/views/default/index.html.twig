@@ -21,7 +21,7 @@
                             <img class="img-responsive" src="{{ asset('images/photos/heart-1.png') }}" alt="">
                             <div class="banner-title">
                                 <h1 class="font-60 text-blue">JC & Elba</h1>
-                                <h4>23 de Junio 2016</h4>
+                                <h4>24 de Junio 2016</h4>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
             <div class="row mt-60">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h3 class="pattern-bottom mt-0">Nos casaremos en</h3>
-                    <div id="clock" class="countdown-timer" data-endingdate="2016/06/23"></div>
+                    <div id="clock" class="countdown-timer" data-endingdate="2016/06/24"></div>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
                         <h2 class="title pattern-bottom">Agradecimientos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus unde, iste consectetur cumque repellat sint.</p>
+                        <p>Queremos agradeceros a cada uno de vosotros por formar parte de nuestra vida compartiendo momentos con nosotros. Esperamos que podais acompañarnos a disfrutar de este día tan especial.</p>
                     </div>
                 </div>
             </div>
@@ -88,18 +88,20 @@
                 <div class="section-content">
                 <!-- Gallery items -->
                 <div class="masonry-items" data-layoutarray="[15]" data-padding="30">
-                    <div class="masonry-item">
-                        <div class="thumb">
-                            <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/1.jpg') }}" alt="featured project"  width="476">
-                        </div>
-                        <div class="overlay text-center">
-                            <div class="display-table">
-                                <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                    {% for image in images %}
+                        <div class="masonry-item">
+                            <div class="thumb">
+                                <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/'~image) }}" alt="featured project"  width="476">
                             </div>
+                            <div class="overlay text-center">
+                                <div class="display-table">
+                                    <div class="display-table-cell"><i class="fa fa-search"></i></div>
+                                </div>
+                            </div>
+                            <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/jcelba/'~image) }}">View more</a>
                         </div>
-                        <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/1.jpg') }}">View more</a>
-                    </div>
-                    <div class="masonry-item">
+                    {% endfor %}
+                    {# <div class="masonry-item">
                         <div class="thumb">
                             <img class="img-responsive img-fullwidth" src="{{ asset('images/portfolio/m1.jpg') }}" alt="featured project"  width="476">
                         </div>
@@ -252,18 +254,18 @@
                             </div>
                         </div>
                         <a class="hover-link" data-lightbox-gallery="gallery" href="{{ asset('images/portfolio/6.jpg') }}">View more</a>
-                    </div>
+                    </div> #}
                 </div>
             </div>
             </div>
         </div>
     </section>
     <!-- Divider: Our Video -->
-    <section id="our-video" class="divider layer-overlay overlay-white-light" data-bg-img="{{ asset('images/jcelba/_MG_5652.jpg') }}">
+    <section id="our-video" class="divider" data-bg-img="{{ asset('images/jcelba/_MG_5652.jpg') }}">
         <div class="container pt-200 pb-200">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <a href="https://www.youtube.com/watch?v=y6PH9u0wnww" data-lightbox-gallery="youtube-video"><i class="fa fa-play-circle text-blue font-72"></i></a>
+                    {#<a href="https://www.youtube.com/watch?v=y6PH9u0wnww" data-lightbox-gallery="youtube-video"><i class="fa fa-play-circle text-blue font-72"></i></a>#}
                 </div>
             </div>
         </div>
@@ -274,8 +276,8 @@
             <div class="section-title">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
-                        <h2 class="title pattern-bottom">Events</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
+                        <h2 class="title pattern-bottom">Eventos</h2>
+                        {#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>#}
                     </div>
                 </div>
             </div>
@@ -287,24 +289,24 @@
                                 <div class="col-xs-12 p-0">
                                     <div class="entry-header">
                                         <div class="event-thumb">
-                                            <img src="{{ asset('images/event/event-img1.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                            <img src="{{ asset('images/event/jw_logo.png') }}" alt="" class="img-responsive img-fullwidth">
                                         </div>
                                         <div class="entry-date text-center">
-                                            <span><b>DEC </b></span><br>25
+                                            <span><b>JUN </b></span><br>24
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 p-0">
                                     <div class="entry-content text-left p-30 pl-xs-15 pr-xs-15">
-                                        <h4 class="entry-title sm-inline-block mt-0 mt-sm-30 pt-0"><a href="index-mp-layout2.html#">The Celebration</a></h4>
+                                        <h4 class="entry-title sm-inline-block mt-0 mt-sm-30 pt-0">Ceremonia</h4>
                                         <div class="entry-meta mt-10 mb-20">
                                             <ul class="list-inline font-13">
-                                                <li><i class="fa fa-clock-o mr-5"></i> 3pm - 6pm </li>
-                                                <li><i class="fa fa-map-marker mr-5"></i> 121 King Street, Melbourne</li>
+                                                <li><i class="fa fa-clock-o mr-5"></i> 11:30 </li>
+                                                <li><i class="fa fa-map-marker mr-5"></i> Passatge d'Utset, 7, Barcelona</li>
                                             </ul>
                                         </div>
-                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
-                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                        <p class="mb-20">Salón del Reino de los Testigos cristianos de Jehová</p>
+                                        <a class="text-blue font-13" target="_blank" href="https://goo.gl/maps/QGdnyXyz7HD2">Ver en google maps <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </article>
@@ -314,24 +316,24 @@
                                 <div class="col-xs-12 p-0">
                                     <div class="entry-header">
                                         <div class="event-thumb">
-                                            <img src="{{ asset('images/event/event-img2.jpg') }}" alt="" class="img-responsive img-fullwidth">
+                                            <img src="{{ asset('images/event/ailaic.jpg') }}" alt="" class="img-responsive img-fullwidth">
                                         </div>
                                         <div class="entry-date text-center">
-                                            <span><b>DEC </b></span><br>26
+                                            <span><b>JUN </b></span><br>24
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 p-0">
                                     <div class="entry-content text-left p-30 pl-xs-15 pr-xs-15">
-                                        <h4 class="entry-title mt-0 pt-0"><a href="index-mp-layout2.html#">Wedding Ceremony</a></h4>
+                                        <h4 class="entry-title mt-0 pt-0">Banquete</h4>
                                         <div class="entry-meta mt-10 mb-20">
                                             <ul class="list-inline font-13">
-                                                <li><i class="fa fa-clock-o mr-5"></i> 6pm - 9pm </li>
-                                                <li><i class="fa fa-map-marker mr-5"></i> 121 King Street, Melbourne</li>
+                                                <li><i class="fa fa-clock-o mr-5"></i> 14:00 </li>
+                                                <li><i class="fa fa-map-marker mr-5"></i> Passatge d'Utset, 14, Barcelona</li>
                                             </ul>
                                         </div>
-                                        <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit illo ipsa numquam, quod iusto enim.</p>
-                                        <a class="text-blue font-13" href="index-mp-layout2.html#">Read more <i class="fa fa-angle-double-right"></i></a>
+                                        <p class="mb-20">Salón de eventos Ailaic</p>
+                                        <a class="text-blue font-13" target="_blank" href="https://goo.gl/maps/WdTxyngxT1m">Ver en google maps <i class="fa fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </article>
@@ -416,11 +418,11 @@
         </div>
     </section> #}
     <!-- Section: RSVP -->
-    <section id="rsvp" class="divider layer-overlay overlay-white" data-bg-img="{{ asset('images/bg/bg7.jpg') }}">
+    <section id="rsvp" class="divider" data-bg-img="{{ asset('images/jcelba/_MG_5737.JPG') }}">
         <div class="container p-0">
             <div class="row">
-                <div class="col-md-6">
-                    <form id="rsvp-form" class="rsvp-form mb-0 mb-sm-60 p-40 pl-30 pr-30" data-bg-color="rgba(0, 121, 191, 0.7)">
+                <div class="col-md-6" style="height: 900px">
+                    {# <form id="rsvp-form" class="rsvp-form mb-0 mb-sm-60 p-40 pl-30 pr-30" data-bg-color="rgba(0, 121, 191, 0.7)">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h2 class="text-center text-white mt-0">RSVP</h2>
@@ -466,7 +468,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </form> #}
                 </div>
             </div>
         </div>
@@ -569,9 +571,9 @@
         </div>
     </section> #}
     <!-- Section: Map -->
-    <section id="map">
+    {# <section id="map">
         <div class="container-fluid p-0">
-            <div data-popupstring-id="#popupstring1" class="map-canvas autoload-map" data-height="600" data-address="Passatge d'Utset, 5, Barcelona" data-zoom="15" data-mapstyle="style2" data-marker="{{ asset('images/map-marker-blue.png') }}"></div>
+            <div data-popupstring-id="#popupstring1" class="map-canvas autoload-map" data-height="600" data-address="Passatge d'Utset, 5, Barcelona" data-zoom="15" data-mapstyle="style1" data-marker="{{ asset('images/map-marker-blue.png') }}"></div>
             <div class="map-popupstring hidden" id="popupstring1">
                 <div class="text-center">
                     <h2>JC & Elba</h2>
@@ -580,5 +582,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> #}
 {% endblock %}

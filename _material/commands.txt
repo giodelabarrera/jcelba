@@ -27,6 +27,9 @@ sudo chmod -R 777 app/cache/ app/logs/; sudo chown -R giorgio:_www app/cache/ ap
 
 sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R $user:www-data app/cache/; sudo chown -R $user:www-data app/logs/; sudo php app/console cache:clear --env=prod; sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R $user:www-data app/cache/; sudo chown -R $user:www-data app/logs/
 
+-- MacOS X
+sudo chmod -R 777 app/cache/ app/logs/; sudo chown -R giorgio:_www app/cache/ app/logs/; sudo php app/console cache:clear --env=prod; sudo chmod -R 777 app/cache/ app/logs/; sudo chown -R giorgio:_www app/cache/ app/logs/
+
 
 # Limpiar cache dev
 
